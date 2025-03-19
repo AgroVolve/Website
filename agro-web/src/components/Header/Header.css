@@ -1,0 +1,135 @@
+.header {
+    min-height: 57vw; 
+    margin: 0px auto;
+    background-image: url(/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    position: relative;
+    padding-top: 100px;
+    background-position: center;
+    z-index: 1; 
+}
+
+.header-contents {
+    margin: 0px 100px;
+    animation: fadeIn 1s;
+}
+
+.header-contents .h2 {
+    padding-top: 55px;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.sln,
+.prob {
+    color: #00BD5E;
+}
+
+.header p {
+    width: 50rem;
+    font-size: 20px;
+    color: #b6afaf;
+}
+
+.Appdownload {
+    padding-top: 40px;
+    margin-left: 90px;
+    padding-bottom: 20px;
+}
+
+.download-platforms img {
+    border: 3px solid white;
+    margin-right: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-top: 70px;
+        min-height: 60vw; 
+    }
+
+    .header-contents {
+        margin: 0 20px;
+    }
+
+    .header-contents .h2 {
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+
+    .header p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .Appdownload {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .download-platforms img {
+        margin: 10px;
+        width: 120px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-top: 50px;
+        min-height: 50vw; 
+    }
+
+    .header-contents .h2 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .header p {
+        font-size: 16px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .Appdownload {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .download-platforms img {
+        margin: 8px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding-top: 40px;
+        min-height: 40vw; 
+    }
+
+    .header-contents .h2 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .header p {
+        font-size: 14px;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .Appdownload {
+        margin-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .download-platforms img {
+        margin: 5px;
+        width: 90px;
+    }
+}

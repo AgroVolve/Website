@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .button img {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 189, 94,1);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+  }
+  
+  .button[style*="display: none"] {
+    display: none !important;
+  }
+  

@@ -1,0 +1,113 @@
+.footer {
+    background-color: rgb(216, 233, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: start; 
+}
+
+.company-name img {
+    width: 70px;
+}
+
+.company-name p {
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    color: black;
+    font-weight: 600;
+}
+
+.company-part {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}
+
+.company-part ol {
+    list-style: none;
+}
+
+.company-part ol li {
+    cursor: pointer;
+}
+
+.company-part ol li:hover {
+    color: #07af5b;
+}
+
+.company-part h1 {
+    color: #00BD5E;
+    padding-bottom: 10px;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    justify-self: start; 
+}
+
+.media ol {
+    list-style: none;
+}
+
+.media ol li {
+    cursor: pointer;
+}
+
+.media ol li:hover {
+    color: #07af5b;
+}
+
+.media h1 {
+    color: #00BD5E;
+    padding-bottom: 10px;
+    
+}
+
+@media (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+        padding-left: 100px;
+    }
+
+    .company-name {
+        justify-self: start; 
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .company-part, .media {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        justify-self: start; 
+        width: 100%;
+    }
+
+    .company-name img {
+        width: 50px;
+    }
+
+    .company-name p {
+        font-size: 18px;
+    }
+
+    .company-part h1, .media h1 {
+        font-size: 18px;
+    }
+
+    .company-part ol li, .media ol li {
+        font-size: 14px;
+    }
+}
